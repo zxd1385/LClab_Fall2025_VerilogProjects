@@ -1,0 +1,146 @@
+{
+  "creator": "Yosys 0.48 (git sha1 aaa5347494801e9e3870b31387da59da24233f76, clang++ 18.1.2-wasi-sdk -O3)",
+  "modules": {
+    "And_Xor": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:3.1-17.10"
+      },
+      "ports": {
+        "button": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "LED": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10 ]
+        }
+      },
+      "cells": {
+        "$and${workspace}/user/src/3_2/And_Xor_circuit.v:11$1": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:11.12-11.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$and${workspace}/user/src/3_2/And_Xor_circuit.v:12$2": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:12.12-12.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$xor${workspace}/user/src/3_2/And_Xor_circuit.v:15$3": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:15.17-15.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 6 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and${workspace}/user/src/3_2/And_Xor_circuit.v:11$1_Y": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:11.12-11.33"
+          }
+        },
+        "$and${workspace}/user/src/3_2/And_Xor_circuit.v:12$2_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:12.12-12.33"
+          }
+        },
+        "$xor${workspace}/user/src/3_2/And_Xor_circuit.v:15$3_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:15.17-15.22"
+          }
+        },
+        "LED": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:5.23-5.26"
+          }
+        },
+        "button": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:4.22-4.28"
+          }
+        },
+        "f": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:9.6-9.7"
+          }
+        },
+        "g": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "{workspace}/user/src/3_2/And_Xor_circuit.v:8.6-8.7"
+          }
+        }
+      }
+    }
+  }
+}

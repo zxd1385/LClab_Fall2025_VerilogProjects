@@ -1,0 +1,44 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_0000022dd24d2e60 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0000022dd24bc990 .scope module, "And_Xor" "And_Xor" 3 3;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "button";
+    .port_info 1 /OUTPUT 5 "LED";
+L_0000022dd24bef60 .functor AND 1, L_0000022dd2502980, L_0000022dd2502480, C4<1>, C4<1>;
+L_0000022dd24bba20 .functor AND 1, L_0000022dd2502520, L_0000022dd25028e0, C4<1>, C4<1>;
+L_0000022dd24d3b50 .functor BUFZ 1, L_0000022dd24bef60, C4<0>, C4<0>, C4<0>;
+L_0000022dd2502b80 .functor XOR 1, L_0000022dd24bba20, L_0000022dd24bef60, C4<0>, C4<0>;
+v0000022dd24d2ca0_0 .net "LED", 4 0, L_0000022dd2502840;  1 drivers
+v0000022dd24bbeb0_0 .net *"_ivl_1", 0 0, L_0000022dd2502980;  1 drivers
+v0000022dd24bb980_0 .net *"_ivl_15", 0 0, L_0000022dd24d3b50;  1 drivers
+v0000022dd24d2ff0_0 .net *"_ivl_18", 0 0, L_0000022dd2502b80;  1 drivers
+o0000022dd2507058 .functor BUFZ 3, C4<zzz>; HiZ drive
+; Elide local net with no drivers, v0000022dd24bbbd0_0 name=_ivl_22
+v0000022dd2501850_0 .net *"_ivl_3", 0 0, L_0000022dd2502480;  1 drivers
+v0000022dd25018f0_0 .net *"_ivl_7", 0 0, L_0000022dd2502520;  1 drivers
+v0000022dd2501990_0 .net *"_ivl_9", 0 0, L_0000022dd25028e0;  1 drivers
+o0000022dd2507118 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000022dd2501a30_0 .net "button", 3 0, o0000022dd2507118;  0 drivers
+v0000022dd2501ad0_0 .net "f", 0 0, L_0000022dd24bba20;  1 drivers
+v0000022dd2501c60_0 .net "g", 0 0, L_0000022dd24bef60;  1 drivers
+L_0000022dd2502980 .part o0000022dd2507118, 2, 1;
+L_0000022dd2502480 .part o0000022dd2507118, 3, 1;
+L_0000022dd2502520 .part o0000022dd2507118, 0, 1;
+L_0000022dd25028e0 .part o0000022dd2507118, 1, 1;
+L_0000022dd2502840 .concat [ 1 1 3 0], L_0000022dd24d3b50, L_0000022dd2502b80, o0000022dd2507058;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "d:/VivadoProjects/LClab_projects/LClab_Fall2025_VerilogProjects/FirstSession_MousapourHDLs/user/src/3_2/And_Xor_circuit.v";
