@@ -1,0 +1,56 @@
+$date
+	Sat Nov 08 21:56:18 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_And_Xor $end
+$var wire 5 ! LED [4:0] $end
+$var parameter 32 " PERIOD $end
+$var reg 4 # button [3:0] $end
+$scope module u_And_Xor $end
+$var wire 4 $ button [3:0] $end
+$var wire 1 % f $end
+$var wire 1 & g $end
+$var wire 5 ' LED [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+bz00 '
+0&
+0%
+b0 $
+b0 #
+bz00 !
+$end
+#10000
+b1000 #
+b1000 $
+#20000
+b100 #
+b100 $
+#30000
+bz11 !
+bz11 '
+1&
+b1100 #
+b1100 $
+#40000
+bz00 !
+bz00 '
+0&
+b10 #
+b10 $
+#50000
+b1010 #
+b1010 $
+#60000

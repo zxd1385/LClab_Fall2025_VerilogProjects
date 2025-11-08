@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001501b022d00 .scope module, "Priority_Encoder" "Priority_Encoder" 2 3;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "button";
+    .port_info 1 /OUTPUT 5 "LED";
+v000001501b046c90_0 .net "LED", 4 0, L_000001501b09e480;  1 drivers
+v000001501b046fb0_0 .net *"_ivl_13", 0 0, L_000001501b09d760;  1 drivers
+L_000001501b09ea98 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v000001501b0477d0_0 .net/2u *"_ivl_14", 0 0, L_000001501b09ea98;  1 drivers
+v000001501b047230_0 .net *"_ivl_17", 0 0, L_000001501b09cfe0;  1 drivers
+L_000001501b09eae0 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v000001501b046f10_0 .net/2u *"_ivl_18", 0 0, L_000001501b09eae0;  1 drivers
+L_000001501b09eb28 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000001501b046dd0_0 .net/2u *"_ivl_20", 0 0, L_000001501b09eb28;  1 drivers
+v000001501b047190_0 .net *"_ivl_22", 0 0, L_000001501b09d4e0;  1 drivers
+v000001501b046970_0 .net *"_ivl_24", 0 0, L_000001501b09de40;  1 drivers
+v000001501b047050_0 .net *"_ivl_29", 0 0, L_000001501b09ce00;  1 drivers
+v000001501b046b50_0 .net *"_ivl_3", 0 0, L_000001501b09cf40;  1 drivers
+L_000001501b09eb70 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v000001501b047370_0 .net/2u *"_ivl_30", 0 0, L_000001501b09eb70;  1 drivers
+v000001501b046bf0_0 .net *"_ivl_33", 0 0, L_000001501b09d3a0;  1 drivers
+L_000001501b09ebb8 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v000001501b047690_0 .net/2u *"_ivl_34", 0 0, L_000001501b09ebb8;  1 drivers
+L_000001501b09ec00 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000001501b046d30_0 .net/2u *"_ivl_36", 0 0, L_000001501b09ec00;  1 drivers
+v000001501b046a10_0 .net *"_ivl_38", 0 0, L_000001501b09dee0;  1 drivers
+L_000001501b09ea08 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v000001501b046e70_0 .net/2u *"_ivl_4", 0 0, L_000001501b09ea08;  1 drivers
+v000001501b0472d0_0 .net *"_ivl_40", 0 0, L_000001501b09ca40;  1 drivers
+o000001501b048fd8 .functor BUFZ 2, C4<zz>; HiZ drive
+; Elide local net with no drivers, v000001501b047410_0 name=_ivl_44
+L_000001501b09ea50 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000001501b0474b0_0 .net/2u *"_ivl_6", 0 0, L_000001501b09ea50;  1 drivers
+v000001501b047550_0 .net *"_ivl_8", 0 0, L_000001501b09e020;  1 drivers
+o000001501b049068 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001501b0475f0_0 .net "button", 3 0, o000001501b049068;  0 drivers
+L_000001501b09cf40 .part o000001501b049068, 3, 1;
+L_000001501b09e020 .functor MUXZ 1, L_000001501b09ea50, L_000001501b09ea08, L_000001501b09cf40, C4<>;
+L_000001501b09d760 .part o000001501b049068, 2, 1;
+L_000001501b09cfe0 .part o000001501b049068, 1, 1;
+L_000001501b09d4e0 .functor MUXZ 1, L_000001501b09eb28, L_000001501b09eae0, L_000001501b09cfe0, C4<>;
+L_000001501b09de40 .functor MUXZ 1, L_000001501b09d4e0, L_000001501b09ea98, L_000001501b09d760, C4<>;
+L_000001501b09ce00 .part o000001501b049068, 2, 1;
+L_000001501b09d3a0 .part o000001501b049068, 0, 1;
+L_000001501b09dee0 .functor MUXZ 1, L_000001501b09ec00, L_000001501b09ebb8, L_000001501b09d3a0, C4<>;
+L_000001501b09ca40 .functor MUXZ 1, L_000001501b09dee0, L_000001501b09eb70, L_000001501b09ce00, C4<>;
+L_000001501b09e480 .concat [ 1 1 1 2], L_000001501b09ca40, L_000001501b09de40, L_000001501b09e020, o000001501b048fd8;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Priority_Encoder.v";

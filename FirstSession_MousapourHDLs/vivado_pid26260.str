@@ -1,0 +1,85 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 26260
+License: Customer
+
+Current time: 	Sat Nov 08 21:33:19 IRST 2025
+Time zone: 	Iran Standard Time (Asia/Tehran)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 20 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Novin#####
+User home directory: C:/Users/Novin#####
+User working directory: d:/VivadoProjects/LClab_projects/LClab_Fall2025_VerilogProjects/FirstSession_MousapourHDLs
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.1
+RDI_DATADIR: D:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Novin#####/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Novin#####/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Novin#####/AppData/Roaming/Xilinx/Vivado/2019.1/layouts/
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	
+Vivado journal file location: 	
+Engine tmp dir: 	d:/VivadoProjects/LClab_projects/LClab_Fall2025_VerilogProjects/FirstSession_MousapourHDLs/.Xil/Vivado-26260-DESKTOP-3JFH8SU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.1
+XILINX_SDK: D:/Xilinx/SDK/2019.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 642 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 64 MB (+64762kb) [00:00:04]
+// [Engine Memory]: 596 MB (+473770kb) [00:00:04]
+// [GUI Memory]: 101 MB (+35462kb) [00:00:04]
+// [GUI Memory]: 107 MB (+380kb) [00:00:04]
+// Tcl Message: source c:/Users/Novin#####/.vscode/extensions/sterben.fpga-support-0.4.6/resources/script/xilinx/launch.tcl -notrace 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'd:/VivadoProjects/LClab_projects/LClab_Fall2025_VerilogProjects/FirstSession_MousapourHDLs/prj/xilinx' 
+// Tcl Message: start_gui -quiet 
+// [Engine Memory]: 630 MB (+3597kb) [00:00:05]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 51 MB. Current time: 11/8/25, 9:33:21 PM IRST
+// [Engine Memory]: 667 MB (+5830kb) [00:15:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 50 MB. Current time: 11/8/25, 10:03:24 PM IRST
