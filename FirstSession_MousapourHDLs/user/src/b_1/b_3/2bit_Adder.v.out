@@ -1,0 +1,130 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000015d488c6b70 .scope module, "Towbit_Adder" "Towbit_Adder" 2 37;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "button";
+    .port_info 1 /OUTPUT 5 "LED";
+v0000015d4891c240_0 .net "LED", 4 0, L_0000015d4891b5c0;  1 drivers
+L_0000015d4891de68 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0000015d4891b0c0_0 .net/2u *"_ivl_0", 0 0, L_0000015d4891de68;  1 drivers
+v0000015d4891c2e0_0 .net *"_ivl_10", 0 0, L_0000015d4891ca60;  1 drivers
+L_0000015d4891def8 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0000015d4891c380_0 .net/2u *"_ivl_15", 0 0, L_0000015d4891def8;  1 drivers
+v0000015d4891be80_0 .net *"_ivl_18", 0 0, L_0000015d4891c600;  1 drivers
+v0000015d4891cb00_0 .net *"_ivl_20", 0 0, L_0000015d4891c6a0;  1 drivers
+v0000015d4891b200_0 .net *"_ivl_23", 0 0, L_0000015d4891bde0;  1 drivers
+v0000015d4891bfc0_0 .net *"_ivl_25", 0 0, L_0000015d4891b8e0;  1 drivers
+v0000015d4891c740_0 .net *"_ivl_3", 0 0, L_0000015d4891bc00;  1 drivers
+o0000015d488cb968 .functor BUFZ 2, C4<zz>; HiZ drive
+; Elide local net with no drivers, v0000015d4891c4c0_0 name=_ivl_32
+v0000015d4891b3e0_0 .net *"_ivl_5", 0 0, L_0000015d4891b520;  1 drivers
+L_0000015d4891deb0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000015d4891b7a0_0 .net/2u *"_ivl_6", 0 0, L_0000015d4891deb0;  1 drivers
+o0000015d488cb9f8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000015d4891b480_0 .net "button", 3 0, o0000015d488cb9f8;  0 drivers
+v0000015d4891b840_0 .net "carry", 0 0, L_0000015d4891ae40;  1 drivers
+L_0000015d4891bc00 .part o0000015d488cb9f8, 3, 1;
+L_0000015d4891b520 .part o0000015d488cb9f8, 1, 1;
+L_0000015d4891b660 .concat [ 1 1 1 1], L_0000015d4891deb0, L_0000015d4891b520, L_0000015d4891bc00, L_0000015d4891de68;
+L_0000015d4891ae40 .part L_0000015d4891ad00, 1, 1;
+L_0000015d4891ca60 .part L_0000015d4891ad00, 0, 1;
+L_0000015d4891c600 .part o0000015d488cb9f8, 0, 1;
+L_0000015d4891c6a0 .part o0000015d488cb9f8, 2, 1;
+L_0000015d4891c7e0 .concat [ 1 1 1 1], L_0000015d4891ae40, L_0000015d4891c6a0, L_0000015d4891c600, L_0000015d4891def8;
+L_0000015d4891bde0 .part L_0000015d4891c560, 1, 1;
+L_0000015d4891b8e0 .part L_0000015d4891c560, 0, 1;
+L_0000015d4891b5c0 .concat [ 1 1 1 2], L_0000015d4891ca60, L_0000015d4891b8e0, L_0000015d4891bde0, o0000015d488cb968;
+S_0000015d4887dba0 .scope module, "f1" "Full_Adder" 2 47, 2 17 0, S_0000015d488c6b70;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "button";
+    .port_info 1 /OUTPUT 2 "LED";
+L_0000015d488b7640 .functor BUFZ 4, L_0000015d4891b660, C4<0000>, C4<0000>, C4<0000>;
+L_0000015d488b76b0 .functor OR 1, L_0000015d488b7800, L_0000015d488b7870, C4<0>, C4<0>;
+v0000015d488bcd00_0 .net "C1", 0 0, L_0000015d488b7800;  1 drivers
+v0000015d488bd200_0 .net "C2", 0 0, L_0000015d488b7870;  1 drivers
+v0000015d488bce40_0 .net "LED", 1 0, L_0000015d4891ad00;  1 drivers
+v0000015d488bc9e0_0 .net "S1", 0 0, L_0000015d488b7330;  1 drivers
+v0000015d488bd2a0_0 .net *"_ivl_13", 0 0, L_0000015d488b76b0;  1 drivers
+v0000015d488bd660_0 .net "btn", 3 0, L_0000015d488b7640;  1 drivers
+v0000015d488bd7a0_0 .net "button", 3 0, L_0000015d4891b660;  1 drivers
+L_0000015d4891bac0 .part L_0000015d488b7640, 1, 1;
+L_0000015d4891bf20 .part L_0000015d488b7640, 2, 1;
+L_0000015d4891b700 .part L_0000015d488b7640, 0, 1;
+L_0000015d4891ad00 .concat8 [ 1 1 0 0], L_0000015d488b71e0, L_0000015d488b76b0;
+S_0000015d4887dd30 .scope module, "fH" "Half_Adder" 2 29, 2 3 0, S_0000015d4887dba0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "S";
+    .port_info 3 /OUTPUT 1 "C";
+L_0000015d488b7330 .functor XOR 1, L_0000015d4891bac0, L_0000015d4891bf20, C4<0>, C4<0>;
+L_0000015d488b7800 .functor AND 1, L_0000015d4891bac0, L_0000015d4891bf20, C4<1>, C4<1>;
+v0000015d488bd160_0 .net "A", 0 0, L_0000015d4891bac0;  1 drivers
+v0000015d488bd520_0 .net "B", 0 0, L_0000015d4891bf20;  1 drivers
+v0000015d488bd840_0 .net "C", 0 0, L_0000015d488b7800;  alias, 1 drivers
+v0000015d488bd3e0_0 .net "S", 0 0, L_0000015d488b7330;  alias, 1 drivers
+S_0000015d488c3a30 .scope module, "sH" "Half_Adder" 2 30, 2 3 0, S_0000015d4887dba0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "S";
+    .port_info 3 /OUTPUT 1 "C";
+L_0000015d488b71e0 .functor XOR 1, L_0000015d4891b700, L_0000015d488b7330, C4<0>, C4<0>;
+L_0000015d488b7870 .functor AND 1, L_0000015d4891b700, L_0000015d488b7330, C4<1>, C4<1>;
+v0000015d488bc940_0 .net "A", 0 0, L_0000015d4891b700;  1 drivers
+v0000015d488bcc60_0 .net "B", 0 0, L_0000015d488b7330;  alias, 1 drivers
+v0000015d488bd480_0 .net "C", 0 0, L_0000015d488b7870;  alias, 1 drivers
+v0000015d488bd700_0 .net "S", 0 0, L_0000015d488b71e0;  1 drivers
+S_0000015d488c3bc0 .scope module, "f2" "Full_Adder" 2 51, 2 17 0, S_0000015d488c6b70;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "button";
+    .port_info 1 /OUTPUT 2 "LED";
+L_0000015d488b7720 .functor BUFZ 4, L_0000015d4891c7e0, C4<0000>, C4<0000>, C4<0000>;
+L_0000015d48966390 .functor OR 1, L_0000015d488b7250, L_0000015d48966da0, C4<0>, C4<0>;
+v0000015d4891cba0_0 .net "C1", 0 0, L_0000015d488b7250;  1 drivers
+v0000015d4891c880_0 .net "C2", 0 0, L_0000015d48966da0;  1 drivers
+v0000015d4891b340_0 .net "LED", 1 0, L_0000015d4891c560;  1 drivers
+v0000015d4891b160_0 .net "S1", 0 0, L_0000015d488b72c0;  1 drivers
+v0000015d4891c100_0 .net *"_ivl_13", 0 0, L_0000015d48966390;  1 drivers
+v0000015d4891ada0_0 .net "btn", 3 0, L_0000015d488b7720;  1 drivers
+v0000015d4891b980_0 .net "button", 3 0, L_0000015d4891c7e0;  1 drivers
+L_0000015d4891c9c0 .part L_0000015d488b7720, 1, 1;
+L_0000015d4891af80 .part L_0000015d488b7720, 2, 1;
+L_0000015d4891bca0 .part L_0000015d488b7720, 0, 1;
+L_0000015d4891c560 .concat8 [ 1 1 0 0], L_0000015d48966780, L_0000015d48966390;
+S_0000015d488c3d50 .scope module, "fH" "Half_Adder" 2 29, 2 3 0, S_0000015d488c3bc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "S";
+    .port_info 3 /OUTPUT 1 "C";
+L_0000015d488b72c0 .functor XOR 1, L_0000015d4891c9c0, L_0000015d4891af80, C4<0>, C4<0>;
+L_0000015d488b7250 .functor AND 1, L_0000015d4891c9c0, L_0000015d4891af80, C4<1>, C4<1>;
+v0000015d488bca80_0 .net "A", 0 0, L_0000015d4891c9c0;  1 drivers
+v0000015d488bcb20_0 .net "B", 0 0, L_0000015d4891af80;  1 drivers
+v0000015d488bcbc0_0 .net "C", 0 0, L_0000015d488b7250;  alias, 1 drivers
+v0000015d4891c1a0_0 .net "S", 0 0, L_0000015d488b72c0;  alias, 1 drivers
+S_0000015d4891ccc0 .scope module, "sH" "Half_Adder" 2 30, 2 3 0, S_0000015d488c3bc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "S";
+    .port_info 3 /OUTPUT 1 "C";
+L_0000015d48966780 .functor XOR 1, L_0000015d4891bca0, L_0000015d488b72c0, C4<0>, C4<0>;
+L_0000015d48966da0 .functor AND 1, L_0000015d4891bca0, L_0000015d488b72c0, C4<1>, C4<1>;
+v0000015d4891c060_0 .net "A", 0 0, L_0000015d4891bca0;  1 drivers
+v0000015d4891bd40_0 .net "B", 0 0, L_0000015d488b72c0;  alias, 1 drivers
+v0000015d4891c420_0 .net "C", 0 0, L_0000015d48966da0;  alias, 1 drivers
+v0000015d4891b2a0_0 .net "S", 0 0, L_0000015d48966780;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "2bit_Adder.v";

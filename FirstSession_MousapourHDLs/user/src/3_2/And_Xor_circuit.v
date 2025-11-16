@@ -8,8 +8,8 @@ module And_Xor(
 wire g;
 wire f;
 
-assign g = button[2] & button[3];
-assign f = button[0] & button[1];
+assign g = ~button[2] & ~button[3];
+assign f = ~button[0] & ~button[1];
 
 assign LED[0] = g;
 assign LED[1] = f ^ g;

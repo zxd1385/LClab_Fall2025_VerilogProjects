@@ -1,0 +1,62 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000022f16d52ce0 .scope module, "Encoder_Parity" "Encoder_Parity" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "Dip";
+    .port_info 1 /OUTPUT 7 "LED";
+L_0000022f16c6c920 .functor XOR 1, L_0000022f16d78ea0, L_0000022f16d78f40, C4<0>, C4<0>;
+L_0000022f16d534d0 .functor XOR 1, L_0000022f16c6c920, L_0000022f16dd0a20, C4<0>, C4<0>;
+L_0000022f16d84950 .functor XOR 1, L_0000022f16dd0ac0, L_0000022f16dd1f60, C4<0>, C4<0>;
+L_0000022f16d849c0 .functor XOR 1, L_0000022f16d84950, L_0000022f16dd0ca0, C4<0>, C4<0>;
+L_0000022f16d52e70 .functor XOR 1, L_0000022f16dd0700, L_0000022f16dd07a0, C4<0>, C4<0>;
+L_0000022f16d52ee0 .functor XOR 1, L_0000022f16d52e70, L_0000022f16dd00c0, C4<0>, C4<0>;
+o0000022f16d86fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000022f16d79620_0 .net "Dip", 3 0, o0000022f16d86fd8;  0 drivers
+v0000022f16d793a0_0 .net "LED", 6 0, L_0000022f16dd1880;  1 drivers
+v0000022f16d796c0_0 .net *"_ivl_1", 0 0, L_0000022f16d78ea0;  1 drivers
+v0000022f16d78c20_0 .net *"_ivl_11", 0 0, L_0000022f16dd0ac0;  1 drivers
+v0000022f16d78900_0 .net *"_ivl_13", 0 0, L_0000022f16dd1f60;  1 drivers
+v0000022f16d79120_0 .net *"_ivl_14", 0 0, L_0000022f16d84950;  1 drivers
+v0000022f16d791c0_0 .net *"_ivl_17", 0 0, L_0000022f16dd0ca0;  1 drivers
+v0000022f16d789a0_0 .net *"_ivl_21", 0 0, L_0000022f16dd0700;  1 drivers
+v0000022f16d79260_0 .net *"_ivl_23", 0 0, L_0000022f16dd07a0;  1 drivers
+v0000022f16d79580_0 .net *"_ivl_24", 0 0, L_0000022f16d52e70;  1 drivers
+v0000022f16d78d60_0 .net *"_ivl_27", 0 0, L_0000022f16dd00c0;  1 drivers
+v0000022f16d787c0_0 .net *"_ivl_3", 0 0, L_0000022f16d78f40;  1 drivers
+v0000022f16d78fe0_0 .net *"_ivl_31", 0 0, L_0000022f16dd0d40;  1 drivers
+v0000022f16d79080_0 .net *"_ivl_33", 0 0, L_0000022f16dd0160;  1 drivers
+v0000022f16d79300_0 .net *"_ivl_35", 0 0, L_0000022f16dd11a0;  1 drivers
+v0000022f16d78860_0 .net *"_ivl_37", 0 0, L_0000022f16dd0de0;  1 drivers
+v0000022f16d78a40_0 .net *"_ivl_4", 0 0, L_0000022f16c6c920;  1 drivers
+v0000022f16d79440_0 .net *"_ivl_7", 0 0, L_0000022f16dd0a20;  1 drivers
+v0000022f16d78cc0_0 .net "p0", 0 0, L_0000022f16d534d0;  1 drivers
+v0000022f16d794e0_0 .net "p1", 0 0, L_0000022f16d849c0;  1 drivers
+v0000022f16d78e00_0 .net "p2", 0 0, L_0000022f16d52ee0;  1 drivers
+L_0000022f16d78ea0 .part o0000022f16d86fd8, 0, 1;
+L_0000022f16d78f40 .part o0000022f16d86fd8, 1, 1;
+L_0000022f16dd0a20 .part o0000022f16d86fd8, 3, 1;
+L_0000022f16dd0ac0 .part o0000022f16d86fd8, 0, 1;
+L_0000022f16dd1f60 .part o0000022f16d86fd8, 2, 1;
+L_0000022f16dd0ca0 .part o0000022f16d86fd8, 3, 1;
+L_0000022f16dd0700 .part o0000022f16d86fd8, 1, 1;
+L_0000022f16dd07a0 .part o0000022f16d86fd8, 2, 1;
+L_0000022f16dd00c0 .part o0000022f16d86fd8, 3, 1;
+L_0000022f16dd0d40 .part o0000022f16d86fd8, 0, 1;
+L_0000022f16dd0160 .part o0000022f16d86fd8, 1, 1;
+L_0000022f16dd11a0 .part o0000022f16d86fd8, 2, 1;
+L_0000022f16dd0de0 .part o0000022f16d86fd8, 3, 1;
+LS_0000022f16dd1880_0_0 .concat [ 1 1 1 1], L_0000022f16dd0de0, L_0000022f16dd11a0, L_0000022f16dd0160, L_0000022f16d52ee0;
+LS_0000022f16dd1880_0_4 .concat [ 1 1 1 0], L_0000022f16dd0d40, L_0000022f16d849c0, L_0000022f16d534d0;
+L_0000022f16dd1880 .concat [ 4 3 0 0], LS_0000022f16dd1880_0_0, LS_0000022f16dd1880_0_4;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Encoder_parity.v";

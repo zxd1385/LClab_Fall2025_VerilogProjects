@@ -2,21 +2,22 @@
 `include "1bit_Half_Adder.v"
 
 module Full_Adder(
-    input wire [3:0] button,
-    output wire [4:0] LED
+    input wire A, B, Cin,
+    output wire S, 
+    output wire Cout
 );
 
-wire [3:0] btn = ~button;
+// wire [3:0] btn = ~button;
 
 wire S1;
 wire C1;
 wire C2;
 
 
-Half_Adder fH (.A(btn[1]), .B(btn[2]), .S(S1), .C(C1));
-Half_Adder sH (.A(btn[0]), .B(S1), .S(LED[0]), .C(C2));
+Half_Adder fH (.A(A), .B(B), .S(S1), .C(C1));
+Half_Adder sH (.A(S1), .B(Cin), .S(S), .C(C2));
 
-assign LED[1] = C1 | C2;
+assign Cout = C1 | C2;
 
 endmodule
 

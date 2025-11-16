@@ -5,9 +5,11 @@ module Priority_Encoder(
     output wire [4:0] LED
 );
 
-assign LED[2] = button[3] ? 1'b1 : 1'b0;
-assign LED[1] = button[3] ? 1'b0 : button[2] ? 1'b1 : button[1] ? 1'b1 : button[0] ? 1'b0 : 1'b0;
-assign LED[0] = button[3] ? 1'b0 : button[2] ? 1'b1 : button[1] ? 1'b0 : button[0] ? 1'b1 : 1'b0;
+wire [3:0] btn = ~button;
+
+assign LED[2] = btn[3] ? 1'b1 : 1'b0;
+assign LED[1] = btn[3] ? 1'b0 : btn[2] ? 1'b1 : btn[1] ? 1'b1 : btn[0] ? 1'b0 : 1'b0;
+assign LED[0] = btn[3] ? 1'b0 : btn[2] ? 1'b1 : btn[1] ? 1'b0 : btn[0] ? 1'b1 : 1'b0;
 
 
 

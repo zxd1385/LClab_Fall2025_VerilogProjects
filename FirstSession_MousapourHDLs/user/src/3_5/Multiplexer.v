@@ -5,7 +5,9 @@ module Multiplexer(
     output wire [4:0] LED
 );
 
-assign LED[0] = button[0] ? (button[1] & button[2]) : (~button[1] & ~button[2]);
+wire [3:0] btn = ~button;
+
+assign LED[0] = btn[0] ? (btn[1] & btn[2]) : (~btn[1] & ~btn[2]);
 
 
 endmodule

@@ -1,0 +1,25 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002114069ec70 .scope module, "Transmition_Line" "Transmition_Line" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 7 "Data";
+    .port_info 1 /INPUT 7 "Noise";
+    .port_info 2 /OUTPUT 7 "NoisyData";
+o00000211407a4b38 .functor BUFZ 7, C4<zzzzzzz>; HiZ drive
+o00000211407a4b68 .functor BUFZ 7, C4<zzzzzzz>; HiZ drive
+L_000002114069eea0 .functor XOR 7, o00000211407a4b38, o00000211407a4b68, C4<0000000>, C4<0000000>;
+v00000211407834d0_0 .net "Data", 6 0, o00000211407a4b38;  0 drivers
+v00000211407830e0_0 .net "Noise", 6 0, o00000211407a4b68;  0 drivers
+v000002114069ee00_0 .net "NoisyData", 6 0, L_000002114069eea0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "transmition_line.v";

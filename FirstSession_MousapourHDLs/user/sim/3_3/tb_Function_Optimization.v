@@ -20,7 +20,7 @@ wire  [4:0]    LED;
 
 
 
-And_Xor  u_And_Xor (
+Function_Optimization  u_And_Xor (
     .button(button),
 
     .LED   (LED   )
